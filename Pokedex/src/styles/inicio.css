@@ -1,0 +1,95 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6f8fc;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.intro {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.intro-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #6f38f6;
+    animation: colorChange 4s infinite;
+}
+
+.intro-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+.start-btn {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #6f38f6;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #4a2ad5;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff6347;
+    }
+    25% {
+        color: #ff9800;
+    }
+    50% {
+        color: #4caf50;
+    }
+    75% {
+        color: #00bcd4;
+    }
+    100% {
+        color: #9c27b0;
+    }
+}
